@@ -4,7 +4,8 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 app.config['DEBUG'] = True
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://blogz:blogz@localhost:8889/blogz'
-
+app.config['SECRET_KEY'] = "Your_secret_string"
+SECRET_KEY = "Your_secret_string"
 db = SQLAlchemy(app)
 
 class Blog(db.Model):
