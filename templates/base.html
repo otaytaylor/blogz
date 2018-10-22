@@ -1,0 +1,35 @@
+<!doctype html> 
+    <html >
+        <head>
+            <title>{{title}} </title>
+
+            <style type="text/css">
+                .error {
+                    color: red;
+                }
+
+             </style>
+        </head>
+
+        <div style='float: left'>
+              <a href="/">home</a>&nbsp;&nbsp;
+              <a href="/blog">all posts</a> &nbsp;&nbsp;
+              <a href="/newpost">new post</a>
+        </div>
+
+        <div style='float: right'>
+                <a href="/login">login </a>&nbsp;&nbsp;
+                <a href="/logout">logout </a>
+        </div>
+
+        <br>
+        <br>
+
+        <body>
+
+            {% block content %}
+            {% endblock %}
+
+
+        </body>
+</html>
